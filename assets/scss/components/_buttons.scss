@@ -1,0 +1,19 @@
+.btn {
+  letter-spacing: 0.1em;
+}
+
+.btn-accent {
+  color: $white;
+
+  &:hover {
+    color: $white;
+    background: $accent-300;
+    border-color: $accent-300;
+  }
+}
+
+:not(.btn-check) + .btn-accent:active {
+  color: $white;
+  background: $accent-300;
+  border-color: $accent-300;
+}

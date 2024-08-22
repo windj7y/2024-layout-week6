@@ -1,0 +1,18 @@
+.link-accent {
+  &:hover {
+    color: $accent-300 !important;
+  }
+}
+
+.link-badge {
+  background: $third;
+  color: $fourth;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  &:hover {
+    background: $fourth;
+    color: $white;
+  }
+}

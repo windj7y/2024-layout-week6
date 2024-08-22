@@ -1,0 +1,25 @@
+.list-check {
+  list-style: none;
+
+  & li::before {
+    content: '\F26E';
+    font-family:'Bootstrap-icons';
+    padding-right: 12px;
+    display: inline-block;
+    vertical-align: -.125em;
+  }
+}
+
+.linear-filter {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba($white, 0) 0%, $white 100%);
+  }
+}

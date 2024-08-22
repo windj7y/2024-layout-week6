@@ -1,0 +1,13 @@
+.logo {
+  width: 68px;
+  height: 20px;
+  background: url(../images/logo.svg) no-repeat;
+  background-size: cover;
+
+  @include picture-replace;
+
+  @include media-breakpoint-up(lg) {
+    width: 96px;
+    height: 28px;
+  }
+}

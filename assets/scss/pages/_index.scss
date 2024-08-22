@@ -1,0 +1,43 @@
+.banner {
+  height: 551px;
+  background: url(../images/banner-sm.png) no-repeat center / cover;
+
+  @include media-breakpoint-up(md) {
+    height: 621px;
+    background-image: url(../images/banner.png);
+  }
+}
+
+.img-overlay {
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 1.25rem 0;
+    transition: background-color .3s;
+  }
+}
+
+.radius-sm {
+  &::after {
+    border-radius: .25rem;
+  }
+}
+
+.hover-img {
+  &:hover {
+    .img-overlay::after {
+      background-color: rgba($gray-900, 0.4);
+    }
+  }
+}
+
+.line {
+  width: 80px;
+  height: 1px;
+  background: $gray;
+  margin: 16px 20px;
+}
